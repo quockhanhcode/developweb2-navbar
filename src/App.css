@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Search */
+li .fa-search{
+  cursor: pointer;
+  color: white;
+}
+.nav-bar{
+  margin-left: 15px;
+}
+.search-box{
+  position: absolute;
+  top:30px;
+  width: 350px;
+  height: 60px;
+  display: none;
+}
+.search-box::before{
+  content: "";
+  position: absolute;
+  top:-32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+
+.search-box input[type="text"]{
+  /* width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #D80B15;
+  outline: none; */
+  margin: 36px 0 0 0;
+  width: 130px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline:none;
+  padding: 12px 14px;
+  transition:0.6s ease-in-out;
+  box-shadow: 3px -2px 12px 4px #4f4949d9;
+}
+
+input[type="text"]:focus{
+  width:210px; 
+  background-color:white;
+}
